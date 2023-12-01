@@ -9,4 +9,4 @@ Wat moet er allemaal kunnen:
 - als je op Give meat drukt krijgen alle carnivores meat (en hun teksballon aanzetten).
 - als je op Tricks drukt doen alle dieren die dat kunnen hun trucje.
 - als je op Hello klikt zonder dat er een naam is ingevuld zeggen alle dieren hallo.
-- als er wel een naam is ingevuld zegtalleen dat dier hallo (de andere knoppen doen het nog wel voor alle dieren).
+- als er wel een naam is ingevuld zegt alleen dat dier hallo (de andere knoppen doen het nog wel voor alle dieren).
