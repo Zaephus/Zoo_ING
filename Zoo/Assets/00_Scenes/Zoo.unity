@@ -884,6 +884,8 @@ MonoBehaviour:
   - {fileID: 1157437131242584, guid: b4ef08bb34d7e8d42a322a3fb477bd93, type: 3}
   - {fileID: 1635293449333400, guid: 9d8f88e4e4860ac489141755f7175db2, type: 3}
   - {fileID: 1072593225874480, guid: ca5452b56f32abc46bc83ba2db5f04fd, type: 3}
+  - {fileID: 2852060825897222274, guid: 834e67838fa115d428a6de7498ccbb9b, type: 3}
+  - {fileID: 5477672820253415563, guid: 572840941a7944f4fa8fd5be03360710, type: 3}
   spawnInfos:
   - type: 0
     name: Henk
@@ -895,6 +897,10 @@ MonoBehaviour:
     name: Wally
   - type: 4
     name: Marty
+  - type: 5
+    name: Marc
+  - type: 6
+    name: Gary
 --- !u!114 &887016509
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,9 @@ namespace Zoo {
         Hippo,
         Pig,
         Tiger,
-        Zebra
+        Zebra,
+        Elephant,
+        Snail
     }
 
 }

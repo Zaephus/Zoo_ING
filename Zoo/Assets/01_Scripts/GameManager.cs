@@ -9,7 +9,7 @@ public class GameManager : Singleton<GameManager> {
 
     public Vector2 minBounds, maxBounds;
 
-    [HideInInspector]
+    // [HideInInspector]
     public List<Animal> animals = new();
 
     [SerializeField]

@@ -1,17 +1,22 @@
-﻿
+
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Zoo {
 
-    public class Tiger : Animal, ICarnivore, ITrickable {
+    public class Snail : Animal, ICarnivore, IHerbivore, ITrickable {
 
         public override void SayHello() {
-            textBalloon.ShowMessage("rraaarww");
+            textBalloon.ShowMessage("*Angry snail noises*");
+        }
+
+        public void EatLeaves() {
+            textBalloon.ShowMessage("crunch crunch crunch");
         }
 
         public void EatMeat() {
-            textBalloon.ShowMessage("nomnomnom thx wubalubadubdub");
+            textBalloon.ShowMessage("grrrrr");
         }
 
         public void PerformTrick() {

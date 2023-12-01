@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Zoo {
 
-    class Zebra : Animal, IHerbivore {
+    public class Zebra : Animal, IHerbivore {
 
         public override void SayHello() {
             textBalloon.ShowMessage("zebra zebra");
