@@ -8,30 +8,20 @@ namespace Zoo {
     public class RandomMoverInBounds : MonoBehaviour {
 
         [SerializeField]
-        private int left, right, top, bottom;
-        [SerializeField]
         private float speed;
 
         private Vector3 goal;
 
         private void Start() {
-            PickGoal();
+            goal = GameManager.Instance.GetRandomPositionInBounds();
         }
 
         private void Update() {
             Vector3 direction = goal - transform.localPosition;
             transform.Translate(direction.normalized * speed * Time.deltaTime);
             if (direction.magnitude < 5) {
-                PickGoal();
+                goal = GameManager.Instance.GetRandomPositionInBounds();
             }
-        }
-
-        private void PickGoal()
-        {
-            goal = new Vector2(
-                Random.Range(left, right),
-                Random.Range(bottom, top)
-            );
         }
 
     }

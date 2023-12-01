@@ -19,9 +19,14 @@ namespace Zoo {
 
             foreach(AnimalSpawnInfo info in spawnInfos) {
                 GameObject prefab = animalPrefabs.Find(x => x.name.Contains(System.Enum.GetName(typeof(AnimalType), info.type)));
+                Vector3 pos = (Vector3)GameManager.Instance.GetRandomPositionInBounds();
+                
                 Animal animal = Instantiate(prefab, transform).GetComponent<Animal>();
+                animal.transform.localPosition = pos;
                 animal.animalName = info.name;
                 animal.name = info.name;
+
+                GameManager.Instance.animals.Add(animal);
             }
 
         }

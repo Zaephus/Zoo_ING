@@ -15,9 +15,14 @@ namespace Zoo {
         [SerializeField]
         private Text text;
 
+        private Coroutine currentCoroutine;
+
         public void ShowMessage(string _message) {
+            if(currentCoroutine != null) {
+                StopCoroutine(currentCoroutine);
+            }
             text.text = _message;
-            StartCoroutine(ShowBalloon());
+            currentCoroutine = StartCoroutine(ShowBalloon());
         }
 
         private IEnumerator ShowBalloon() {
